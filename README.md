@@ -23,6 +23,8 @@ after that if you wanna apply it to the system that's how:
 
 - first run the take_photo.py script (python3 take_photo.py) and be sure to be infront of your webcam 
 
+- if you changed the hardcoded location in the script change it back to (/usr/share/.secrets/me.jpg)
+  
 - then run the setup.py (python3 setup.py) and if you have a missing libraries or packages this will install it
 and then it will configure the files for you
 
