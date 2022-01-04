@@ -21,13 +21,13 @@ to use as normal script :
 
 after that if you wanna apply it to the system that's how:
 
-first run the take_photo.py script (python3 take_photo.py) and be sure to be infront of your webcam 
+- first run the take_photo.py script (python3 take_photo.py) and be sure to be infront of your webcam 
 
-then run the setup.py (python3 setup.py) and if you have a missing libraries or packages this will install it
+- then run the setup.py (python3 setup.py) and if you have a missing libraries or packages this will install it
 and then it will configure the files for you
 
 
-after that open your (session and startup) software from your application menu denpending on your linux distro then click on (Application autostart)
+- after that open your (session and startup) software from your application menu denpending on your linux distro then click on (Application autostart)
 then click on add or the plus (+) button give it a name of your choice and on the command section type (/usr/bin/python3 /location/to/facial_recognition.py)
 
 
