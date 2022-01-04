@@ -33,4 +33,4 @@ and then it will configure the files for you
 then click on add or the plus (+) button give it a name of your choice and on the command section type (/usr/bin/python3 /location/to/facial_recognition.py)
 
 
-- now everytime you open your machine after login it will open the facial_recognition in the background and if you're not there it will shutdown the system
+- now everytime you open your machine after login it will run the facial_recognition in the background and if you're not there it will shutdown the system
