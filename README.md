@@ -1,6 +1,6 @@
 # facial recognition
 
-facial recognition is a really simple project to add an additional layer of security to linux machine
+facial recognition is a really simple project to add an additional layer of security to linux machines
 
 facial recognition is made using the facial_recognition library https://github.com/ageitgey/face_recognition 
 
