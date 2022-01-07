@@ -22,7 +22,7 @@ system_dependencies = [ # neccessary system dependencies for the face_recognitio
 
 requirements = [
 	'opencv-python', # for taking photos
-	'face-recognition',	# for the actual face recognition  
+	'face_recognition',	# for the actual face recognition  
 	'pywhatkit', # for shutting down the system 
 ]
 
@@ -60,8 +60,7 @@ def config():
 	print('[*] all done ;)')
 	print('\t')
 	print('[+] if you want to move or delete the image navigate to /usr/share/.secrets and use this command (chattr -i me.jpg)')
-
-
+	print('\n[i] recommended security step to do: navigate to your face_recognition directory and use this command to lock down the (facial_recognition.py) script\nso no one can move or delete it (chattr +i facial_recognition.py)')
 def configuring_the_files():
 	Photo_Name = 'me.jpg'
 
