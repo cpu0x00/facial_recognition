@@ -3,7 +3,6 @@
 import cv2
 import face_recognition
 import os
-import pywhatkit
 
 
 def face_recognizer():
@@ -23,16 +22,22 @@ def face_recognizer():
 		rgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
 		img2_encoded = face_recognition.face_encodings(rgb_img2)[0]
 		recognizer = face_recognition.compare_faces([img1_encoded], img2_encoded)
-		if recognizer == [True]:
+		if recognizer[0] == True:
 			print('[*] authorized face detected access granted')
-			# say('authorized face detected, access granted')
-		os.remove('captured.png')
+			os.remove('captured.png')
 
+
+		if recognizer[0] == False:
+			os.remove('captured.png')
+			print('[-] access denied')
+			print('[-] shutting down the system')
+			os.system('shutdown now')	
 	except IndexError:
 		os.remove('captured.png')
 		print('[-] access denied')
 		print('[-] shutting down the system')
-		pywhatkit.shutdown(0)
+		os.system('shutdown now')
+		
 
 
 
