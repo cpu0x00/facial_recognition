@@ -22,8 +22,7 @@ system_dependencies = [ # neccessary system dependencies for the face_recognitio
 
 requirements = [
 	'opencv-python', # for taking photos
-	'face_recognition',	# for the actual face recognition  
-	'pywhatkit', # for shutting down the system 
+	'face_recognition',	# for the actual face recognition   
 ]
 
 
